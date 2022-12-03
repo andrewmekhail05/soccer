@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOOOOOOAL!</title>
+    <link rel="icon" type="image/x-icon" href="soccerball.png">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        img{
+            width:100vw;
+            height:100vh;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        .soccerGame{
+            margin-top: 400px;
+            margin-left:150px;
+            background-image: url(soccer.png);
+            width:200px;
+            height:100px;
+            animation: walk 5s linear infinite
+        }
+        .bird{
+            margin-left:150px;
+            background-image: url(bird.png);
+            width:100px;
+            height:100px;
+            animation: fly 5s linear infinite
+        }
+        @keyframes walk{
+            0%{transform: translateX(-500px);}
+            100%{transform: translateX(1275px);}
+        }
+        @keyframes fly{
+            0%{transform: translateX(-500px);}
+            100%{transform: translateX(1275px);}
+        }
+    </style>
+</head>
+<body>
+    <img src="field.jpg" alt="field">
+    <div class="bird"></div>
+    <div class="soccerGame"></div>
+</body>
+</html>
